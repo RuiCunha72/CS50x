@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Because on the worst-case scenario it has been amongost the worst tests and on the best-case scenario it has been good and therefore proving the O(n^2) and the Ω(n).
+
+sort2 uses: Merge Sort
+
+How do you know?: Consistent times on the tests for both best and worst-case scenarios, showing good results on both so it proves the O(nlogn) and the Ω(nlogn).
+
+sort3 uses: Selection Sort
+
+How do you know?: Also shows consistent times no matter the scenarios, but showing bad times. Therefore it proves the O(n^2) and the Ω(n^2). Another proof that this was the selection sort is the bad result even for the case where the list was sorted, showing that it might have gone trough all of the list no matter what like showed on the lecture by professor David.

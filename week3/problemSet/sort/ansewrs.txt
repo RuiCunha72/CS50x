@@ -1,0 +1,61 @@
+Time for each program on random50000.txt
+sort1 - 0m0,048s
+sort2 - 0m0,026s
+sort3 - 0m0,039s
+
+Time for each program on random100000.txt
+sort1 - 0m0,183s
+sort2 - 0m0,026s
+sort3 - 0m0,122s
+
+Time for each program on random500000.txt
+sort1 - 0m6,596s
+sort2 - 0m0,415s
+sort3 - 0m2,896s
+
+
+
+Time for each program on reversed5000.txt
+sort1 - 0m0,059s
+sort2 - 0m0,021s
+sort3 - 0m0,041s
+
+Time for each program on reversed10000.txt
+sort1 - 0m0,204s
+sort2 - 0m0,027s
+sort3 - 0m0,134s
+
+Time for each program on reversed50000.txt
+sort1 - 0m4,966s
+sort2 - 0m0,386s
+sort3 - 0m2,971s
+
+
+
+
+Time for each program on sorted5000.txt
+sort1 - 0m0,014s
+sort2 - 0m0,011s
+sort3 - 0m0,036s
+
+Time for each program on sorted10000.txt
+sort1 - 0m0,020s
+sort2 - 0m0,032s
+sort3 - 0m0,127s
+
+Time for each program on sorted50000.txt
+sort1 - 0m0,437s
+sort2 - 0m0,428s
+sort3 - 0m2,655s
+
+
+
+Answers
+sort1 - Bubble Sort -> Because on the worst-case scenario it has been amongost the worst tests and on the best-case scenario it has been good
+                       and therefore proving the O(n^2) and the Ω(n).
+sort2 - Merge Sort -> Consistent times on the tests for both best and worst-case scenarios, showing good results on both so it proves the
+                      O(nlogn) and the Ω(nlogn).
+sort3 - Selection Sort -> Also shows consistent times no matter the scenarios, but showing bad times. Therefore it proves the O(n^2) and the Ω(n^2).
+                          Another proof that this was the selection sort is the bad result even for the case where the list was sorted, showing
+                          that it might have gone trough all of the list no matter what like showed on the lecture by professor David.
+
