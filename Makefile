@@ -1,9 +1,12 @@
-CC = gcc
-CFLAGS = -g -Wall -std=c11
-LDLIBS = -lcs50
+CC= clang
+CFLAGS = -ferror-limit=1 -gdwarf-4 -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-gnu-folding-constant -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wno-unused-but-set-variable -Wshadow
+LDLIBS = -lcrypt -lcs50 -lm
 
-%: %.c
-	$(CC) $(CFLAGS) $< -o $@ $(LDLIBS)
+EXE = foo
 
-clean:
-	rm -f $(basename $(wildcard *.c))
+SRCS = foo.c bar.c
+OBJS = $(SRCS:.c=.o)
+
+
+$(EXE): $(OBJS)
+     $(CC) $(CFLAGS) -o $@ $(OBJS) $(LDLIBS)
