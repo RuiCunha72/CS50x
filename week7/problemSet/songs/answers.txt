@@ -1,0 +1,19 @@
+1.
+
+Calculate the average of each value: energy, valence, and danceability
+Since the AURA represents two moods, pick the two averages that are the furthest from 0.5 (the most extreme values)
+Possible scenario:
+    AVG(energy) = 0.74 <---
+    AVG(valence) = 0.32 <---
+    AVG(danceability) = 0.55
+The two most extreme averages are energy and valence
+Since AVG(energy) > 0.5 we can say the listener enjoys energetic songs
+Since AVG(valence) < 0.5 we can say the listener tends to prefer more melancholic songs
+Thus, the listener's mood would be energetic and melancholic (not the best example since it sounds a bit contradictory ;--;)
+
+
+2. 
+
+Maybe the listener spends more time listening to their top 25% most played songs and that could be a better representation of their mood
+To do this we could apply the same logic as in point 1, but restricted only to that top segment
+
