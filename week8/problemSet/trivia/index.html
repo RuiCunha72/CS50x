@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+
+                const buttons = document.querySelectorAll(".multiple-choice");
+
+                buttons.forEach(button => {
+                    button.addEventListener("click", function() {
+                        buttons.forEach(btn => {
+                            btn.style.backgroundColor= "";
+                        });
+
+                        if (button.textContent === "Lisbon") {
+                            button.style.backgroundColor = "green";
+                            document.getElementById("feedback").textContent = "Correct!";
+                        }
+                        else {
+                            button.style.backgroundColor = "red";
+                            document.getElementById("feedback").textContent = "Incorrect";
+                        }
+                    });
+                });
+
+                document.querySelector("#free_response").addEventListener("click", function() {
+                    const answer = document.querySelector("#answer");
+                    if(document.querySelector("#answer").value === "D. Afonso Henriques") {
+                        answer.style.backgroundColor = "green";
+                        document.getElementById("feedback2").textContent = "Correct!";
+                    }
+                    else {
+                        answer.style.backgroundColor = "red";
+                        document.getElementById("feedback2").textContent = "Inorrect";
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What is the capital of Portugal?</h3>
+                <div id="feedback"></div>
+                <button class="multiple-choice">Guimarães</button>
+                <hr>
+                <button class="multiple-choice">Lisbon</button>
+                <hr>
+                <button class="multiple-choice">Porto</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>Who was the first king of Portugal?</h3>
+                <div id="feedback2"></div>
+                <input id="answer" type="text">
+                <button id="free_response">Submit</button>
+            </div>
+        </div>
+    </body>
+</html>
