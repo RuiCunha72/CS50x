@@ -1,0 +1,17 @@
+10 tags:
+<link>
+<script>
+<nav>
+<a>
+<button>
+<div>
+<ul>
+<li>
+<h1>
+<img>
+
+JavaScript:
+I've used js to trigger an alert for the pages that are still missing the work.
+
+BootStrap:
+I've used BootStrap to implement the navegation bar in every page and the columns in the index.html.

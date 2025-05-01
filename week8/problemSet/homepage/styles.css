@@ -1,0 +1,28 @@
+.img_Rui_Cunha {
+    width: 100%;          
+    max-width: 250px;     
+    height: auto;         
+    display: block;
+    margin: 1% auto;
+  }  
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 1% 20%;
+}
+
+.space {
+    margin-top: 50px;
+    /*margin-bottom: 30px;*/
+}
+
+.img_check_more {
+    width: auto;
+    height: 170px;
+}
+
+.italic {
+    font-style: italic;
+}
