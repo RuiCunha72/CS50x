@@ -1,5 +1,7 @@
 .env
+week7/problemSet/movies/movies.db
 week7/problemSet/movies/output.txt
+week7/problemSet/movies/LICENSE
 week8/lecture/src8
 week9/lecture/src9
 week9/lecture/hello/__pycache__
@@ -9,3 +11,5 @@ week9/lecture/login/flask_session
 week9/lecture/store/__pycache__
 week9/lecture/store/flask_session
 week9/lecture/shows/__pycache__
+week9/lecture/shows/LICENSE
+week9/lecture/shows/shows.db
